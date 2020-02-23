@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const VideoHref = () => {
-  return (
-    <div>
-      <div>icon will be here</div>
-      <p>Watch the full video noe</p>
-    </div>
-  )
-}
+import Icon from "../../../../assets/icons/play1.svg";
+
+export const VideoHref = () => (
+  <div className="video-href">
+    <div className="video-href__icon-container"><Icon className="video-href__icon" /></div>
+    <span className="video-href__title">Watch the full video now</span>
+  </div>
+)
 
 export default VideoHref
