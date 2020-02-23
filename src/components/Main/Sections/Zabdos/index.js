@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from "gatsby"
 
 import Card from './Card'
 import VideoHref from './VideoHref'
@@ -13,9 +14,9 @@ export const Zabdos = () => {
       </div>
       <div className="section__body">
         <VideoHref />
-        <Card />
-        <Card />
-        <Card />
+        <Card title="Buisness class" fileName="ex1.jpg" description="Arrive inspired" />
+        <Card title="Economy class" fileName="ex2.jpg" description="Expect the expectional" />
+        <Card title="Explore the Fleet in AR" fileName="ex3.jpg" description="Award winning technology" />
       </div>
     </section>
   )

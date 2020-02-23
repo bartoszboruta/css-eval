@@ -1,9 +1,16 @@
 import React from 'react'
 
-export const Card = () => {
+import Image from '../../../shared/Image'
+
+export const Card = ({ description, fileName, title }) => {
   return (
-    <div>
-      Card
+    <div className="card">
+      <Image maxWidth={600} alt="Gatsby in Space" filename={fileName} className="card__header-image" />
+      <div className="card__body">
+        <span className="card__description">{description}</span>
+        <div className="card__description-border" />
+        <h3 className="card__title">{title}</h3>
+      </div>
     </div>
   )
 }
