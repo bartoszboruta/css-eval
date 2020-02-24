@@ -20,3 +20,21 @@
 
   &__header-image
     height: 150px  
+
++media-breakpoint-up(sm)
+  .card
+    flex: 1
+
+    &__header-image
+      height: 250px
+    
+    &.-transformed
+      transform: translate(40px, 0px)
+    
+    &.-big
+      box-shadow: 0 0 $m-base $color-gray-300
+      margin-left: $m-sm
+      z-index: 1
+
+      .card__header-image
+         height: 700px
