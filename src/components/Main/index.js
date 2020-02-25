@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Sections from './Sections'
+
 export const Main = () => {
   return (
     <main>
-      Main
+      <Sections />
     </main>
   )
 }
