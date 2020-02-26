@@ -1,0 +1,64 @@
+.footer
+  &__container
+    align-items: center
+    background-color: $color-gray-darken
+    display: flex
+    flex-direction: column
+
+  &__image
+    margin: 50px
+    width: 200px
+
+  &__navigation
+    align-items: center
+    border-bottom: $border-width-base solid $color-gray-600
+    display: flex
+    flex-direction: column
+    padding-bottom: 60px
+    width: 100%
+
+  &__navigation-container
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    width: 100%
+
+  &__navigation-group-title
+    color: $color-white
+    
+  &__navigation-items
+    display: none
+
+  &__additional
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    padding: 20px
+
+  &__additional-url
+    color: $color-white
+    font-size: $font-size-sm
+    margin:
+      left: 10px
+      right: 10px
+    text-decoration: none
+
+  +media-breakpoint-up(lg)
+    &__navigation
+      flex-direction: row
+      justify-content: center
+      padding-top: 60px
+
+    &__navigation-container
+      padding-right: 60px
+
+    &__navigation-item
+      font-size: $font-size-sm
+      padding:
+        bottom: 5px
+        top: 5px
+      text-decoration: none
+
+    &__navigation-items
+      display: flex
+      flex-direction: column
